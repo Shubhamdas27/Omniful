@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TechVision | Get Your Project Started</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Get in touch with TechVision for your web development needs. Request a quote, schedule a consultation, or ask about our services.">
+    <meta name="keywords" content="contact web developer, web development quote, consultation, project inquiry">
+    <meta name="author" content="TechVision">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://techvision.example.com/contact.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html" aria-label="TechVision Home">TechVision</a></h1>
+            </div>
+            <nav class="main-nav" role="navigation" aria-label="Main navigation">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">UI/UX Design</a></li>
+                            <li><a href="#">SEO Optimization</a></li>
+                            <li><a href="#">Accessibility Audit</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="contact.html" aria-current="page" class="nav-link active">Contact</a></li>
+                    <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content contact-page">
+        <div class="container">
+            <header class="page-header">
+                <h1>Get Your Project Started</h1>
+                <p class="page-description">Ready to create something amazing? Let's discuss your project and bring your vision to life.</p>
+            </header>
+
+            <div class="contact-layout">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>Project Inquiry Form</h2>
+                    
+                    <!-- Form Progress Indicator -->
+                    <div class="form-progress" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="3" aria-label="Form progress: step 1 of 3">
+                        <div class="progress-steps">
+                            <div class="step active" aria-current="step">
+                                <span class="step-number">1</span>
+                                <span class="step-label">Basic Info</span>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">2</span>
+                                <span class="step-label">Project Details</span>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">3</span>
+                                <span class="step-label">Preferences</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="#" method="post" class="contact-form" novalidate>
+                        <!-- Step 1: Basic Information -->
+                        <fieldset class="form-step active" id="step-1">
+                            <legend>Step 1: Basic Information</legend>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="first-name">First Name <span class="required" aria-label="required">*</span></label>
+                                    <input type="text" id="first-name" name="firstName" required aria-describedby="first-name-error" autocomplete="given-name">
+                                    <div id="first-name-error" class="error-message" role="alert" aria-live="polite"></div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="last-name">Last Name <span class="required" aria-label="required">*</span></label>
+                                    <input type="text" id="last-name" name="lastName" required aria-describedby="last-name-error" autocomplete="family-name">
+                                    <div id="last-name-error" class="error-message" role="alert" aria-live="polite"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="required" aria-label="required">*</span></label>
+                                <input type="email" id="email" name="email" required aria-describedby="email-help email-error" autocomplete="email">
+                                <small id="email-help" class="form-help">We'll use this to send you project updates and respond to your inquiry.</small>
+                                <div id="email-error" class="error-message" role="alert" aria-live="polite"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" aria-describedby="phone-help phone-error" autocomplete="tel">
+                                <small id="phone-help" class="form-help">Optional - for urgent project discussions.</small>
+                                <div id="phone-error" class="error-message" role="alert" aria-live="polite"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company">Company/Organization</label>
+                                <input type="text" id="company" name="company" aria-describedby="company-error" autocomplete="organization">
+                                <div id="company-error" class="error-message" role="alert" aria-live="polite"></div>
+                            </div>
+                        </fieldset>
+
+                        <!-- Step 2: Project Details -->
+                        <fieldset class="form-step" id="step-2">
+                            <legend>Step 2: Project Details</legend>
+                            
+                            <div class="form-group">
+                                <fieldset class="checkbox-group">
+                                    <legend>What services are you interested in? <span class="required" aria-label="required">*</span></legend>
+                                    <div class="checkbox-grid">
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="services" value="web-development" required aria-describedby="services-error">
+                                            <span class="checkbox-text">Web Development</span>
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="services" value="ui-ux-design">
+                                            <span class="checkbox-text">UI/UX Design</span>
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="services" value="seo-optimization">
+                                            <span class="checkbox-text">SEO Optimization</span>
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="services" value="accessibility-audit">
+                                            <span class="checkbox-text">Accessibility Audit</span>
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="services" value="maintenance">
+                                            <span class="checkbox-text">Website Maintenance</span>
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="services" value="consulting">
+                                            <span class="checkbox-text">Technical Consulting</span>
+                                        </label>
+                                    </div>
+                                    <div id="services-error" class="error-message" role="alert" aria-live="polite"></div>
+                                </fieldset>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="project-type">Project Type <span class="required" aria-label="required">*</span></label>
+                                <select id="project-type" name="projectType" required aria-describedby="project-type-error">
+                                    <option value="">Select project type</option>
+                                    <option value="new-website">New Website</option>
+                                    <option value="redesign">Website Redesign</option>
+                                    <option value="web-application">Web Application</option>
+                                    <option value="e-commerce">E-commerce Site</option>
+                                    <option value="landing-page">Landing Page</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <div id="project-type-error" class="error-message" role="alert" aria-live="polite"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="budget">Budget Range</label>
+                                <select id="budget" name="budget" aria-describedby="budget-help budget-error">
+                                    <option value="">Select budget range</option>
+                                    <option value="under-2lakh">Under ₹2,00,000</option>
+                                    <option value="2lakh-5lakh">₹2,00,000 - ₹5,00,000</option>
+                                    <option value="5lakh-10lakh">₹5,00,000 - ₹10,00,000</option>
+                                    <option value="10lakh-25lakh">₹10,00,000 - ₹25,00,000</option>
+                                    <option value="over-25lakh">Over ₹25,00,000</option>
+                                    <option value="not-sure">Not sure yet</option>
+                                </select>
+                                <small id="budget-help" class="form-help">This helps us recommend the best approach for your project.</small>
+                                <div id="budget-error" class="error-message" role="alert" aria-live="polite"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="timeline">Project Timeline</label>
+                                <select id="timeline" name="timeline" aria-describedby="timeline-error">
+                                    <option value="">Select timeline</option>
+                                    <option value="asap">ASAP</option>
+                                    <option value="1-month">Within 1 month</option>
+                                    <option value="2-3-months">2-3 months</option>
+                                    <option value="3-6-months">3-6 months</option>
+                                    <option value="6-months-plus">6+ months</option>
+                                    <option value="flexible">Flexible</option>
+                                </select>
+                                <div id="timeline-error" class="error-message" role="alert" aria-live="polite"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="project-description">Project Description <span class="required" aria-label="required">*</span></label>
+                                <textarea id="project-description" name="projectDescription" rows="6" required aria-describedby="project-description-help project-description-error" placeholder="Tell us about your project goals, target audience, and any specific features you need..."></textarea>
+                                <small id="project-description-help" class="form-help">Please provide as much detail as possible to help us understand your needs.</small>
+                                <div id="project-description-error" class="error-message" role="alert" aria-live="polite"></div>
+                            </div>
+                        </fieldset>
+
+                        <!-- Step 3: Preferences -->
+                        <fieldset class="form-step" id="step-3">
+                            <legend>Step 3: Preferences & Additional Information</legend>
+                            
+                            <div class="form-group">
+                                <fieldset class="radio-group">
+                                    <legend>How did you hear about us?</legend>
+                                    <div class="radio-options">
+                                        <label class="radio-label">
+                                            <input type="radio" name="hearAbout" value="search-engine">
+                                            <span class="radio-text">Search Engine</span>
+                                        </label>
+                                        <label class="radio-label">
+                                            <input type="radio" name="hearAbout" value="social-media">
+                                            <span class="radio-text">Social Media</span>
+                                        </label>
+                                        <label class="radio-label">
+                                            <input type="radio" name="hearAbout" value="referral">
+                                            <span class="radio-text">Referral</span>
+                                        </label>
+                                        <label class="radio-label">
+                                            <input type="radio" name="hearAbout" value="blog">
+                                            <span class="radio-text">Blog/Content</span>
+                                        </label>
+                                        <label class="radio-label">
+                                            <input type="radio" name="hearAbout" value="other">
+                                            <span class="radio-text">Other</span>
+                                        </label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="current-website">Current Website URL</label>
+                                <input type="url" id="current-website" name="currentWebsite" aria-describedby="current-website-help current-website-error" placeholder="https://example.com">
+                                <small id="current-website-help" class="form-help">If you have an existing website we should review.</small>
+                                <div id="current-website-error" class="error-message" role="alert" aria-live="polite"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="additional-info">Additional Information</label>
+                                <textarea id="additional-info" name="additionalInfo" rows="4" aria-describedby="additional-info-help" placeholder="Any other details you'd like to share..."></textarea>
+                                <small id="additional-info-help" class="form-help">Optional - share any additional context or questions.</small>
+                            </div>
+                            
+                            <div class="form-group">
+                                <fieldset class="checkbox-group">
+                                    <legend>Communication Preferences</legend>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="newsletter" value="subscribe">
+                                        <span class="checkbox-text">Subscribe to our newsletter for web development tips and updates</span>
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="marketing" value="allow">
+                                        <span class="checkbox-text">Allow marketing communications about our services</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="checkbox-label required-consent">
+                                    <input type="checkbox" name="consent" required aria-describedby="consent-error">
+                                    <span class="checkbox-text">I agree to the <a href="#" target="_blank" rel="noopener">Privacy Policy</a> and <a href="#" target="_blank" rel="noopener">Terms of Service</a> <span class="required" aria-label="required">*</span></span>
+                                </label>
+                                <div id="consent-error" class="error-message" role="alert" aria-live="polite"></div>
+                            </div>
+                        </fieldset>
+
+                        <!-- Form Navigation -->
+                        <div class="form-navigation">
+                            <button type="button" class="btn btn-secondary" id="prev-step" disabled>Previous</button>
+                            <button type="button" class="btn btn-primary" id="next-step">Next</button>
+                            <button type="submit" class="btn btn-primary hidden" id="submit-form">Submit Project Inquiry</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-section">
+                    <h2>Get in Touch</h2>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <h3>
+                                <span class="contact-icon" aria-hidden="true">📧</span>
+                                Email Us
+                            </h3>
+                            <p>For project inquiries and general questions:</p>
+                            <a href="mailto:info@techvision.com" class="contact-link">info@techvision.com</a>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <h3>
+                                <span class="contact-icon" aria-hidden="true">📞</span>
+                                Call Us
+                            </h3>
+                            <p>For urgent inquiries and consultations:</p>
+                            <a href="tel:+919876543210" class="contact-link">+91 98765 43210</a>
+                            <small>Monday - Friday, 9:00 AM - 6:00 PM IST</small>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <h3>
+                                <span class="contact-icon" aria-hidden="true">📍</span>
+                                Visit Us
+                            </h3>
+                            <address>
+                                123 Tech Park, Sector 21<br>
+                                Gurgaon, Haryana 122001<br>
+                                India
+                            </address>
+                        </div>
+                    </div>
+                    
+                    <div class="response-time">
+                        <h3>Response Time</h3>
+                        <p>We typically respond to project inquiries within 24 hours during business days. For urgent matters, please call us directly.</p>
+                    </div>
+                    
+                    <div class="social-contact">
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#" aria-label="Follow us on Twitter" class="social-link">
+                                <span aria-hidden="true">🐦</span>
+                                Twitter
+                            </a>
+                            <a href="#" aria-label="Connect with us on LinkedIn" class="social-link">
+                                <span aria-hidden="true">💼</span>
+                                LinkedIn
+                            </a>
+                            <a href="#" aria-label="View our GitHub projects" class="social-link">
+                                <span aria-hidden="true">🐙</span>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechVision</h3>
+                    <p>Creating accessible and modern web solutions for businesses of all sizes.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Follow us on Twitter">
+                            <span aria-hidden="true">🐦</span>
+                        </a>
+                        <a href="#" aria-label="Connect with us on LinkedIn">
+                            <span aria-hidden="true">💼</span>
+                        </a>
+                        <a href="#" aria-label="View our GitHub projects">
+                            <span aria-hidden="true">🐙</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">SEO Optimization</a></li>
+                        <li><a href="#">Accessibility Audit</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <address>
+                        <p>123 Tech Park, Sector 21<br>
+                        Gurgaon, Haryana 122001</p>
+                        <p>Email: <a href="mailto:info@techvision.com">info@techvision.com</a></p>
+                        <p>Phone: <a href="tel:+919876543210">+91 98765 43210</a></p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechVision. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

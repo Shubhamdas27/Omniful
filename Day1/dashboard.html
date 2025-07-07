@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - TechVision | Project Management</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="TechVision project dashboard for managing web development projects, tracking progress, and accessing resources.">
+    <meta name="keywords" content="project dashboard, web development management, client portal">
+    <meta name="author" content="TechVision">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-body">
+    <!-- Skip to main content link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header class="dashboard-header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <h1><a href="index.html" aria-label="TechVision Home">TechVision</a></h1>
+            </div>
+            
+            <nav class="dashboard-nav" role="navigation" aria-label="Dashboard navigation">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Public Site</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="user-menu">
+                <button class="user-menu-toggle" aria-expanded="false" aria-haspopup="true" aria-label="User menu">
+                    <span class="user-avatar" aria-hidden="true">👤</span>
+                    <span class="user-name">Shubham Kumar</span>
+                </button>
+                <ul class="user-dropdown">
+                    <li><a href="#">Profile Settings</a></li>
+                    <li><a href="#">Notifications</a></li>
+                    <li><a href="#">Help & Support</a></li>
+                    <li><a href="#">Sign Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar" role="navigation" aria-label="Main dashboard navigation">
+            <div class="sidebar-header">
+                <h2>Dashboard</h2>
+            </div>
+            
+            <ul class="sidebar-menu">
+                <li>
+                    <a href="#overview" class="sidebar-link active" aria-current="page" tabindex="0">
+                        <span class="sidebar-icon" aria-hidden="true">📊</span>
+                        <span class="sidebar-text">Overview</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects" class="sidebar-link" tabindex="0">
+                        <span class="sidebar-icon" aria-hidden="true">📁</span>
+                        <span class="sidebar-text">Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#tasks" class="sidebar-link" tabindex="0">
+                        <span class="sidebar-icon" aria-hidden="true">✅</span>
+                        <span class="sidebar-text">Tasks</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#analytics" class="sidebar-link" tabindex="0">
+                        <span class="sidebar-icon" aria-hidden="true">📈</span>
+                        <span class="sidebar-text">Analytics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#resources" class="sidebar-link" tabindex="0">
+                        <span class="sidebar-icon" aria-hidden="true">📚</span>
+                        <span class="sidebar-text">Resources</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#settings" class="sidebar-link" tabindex="0">
+                        <span class="sidebar-icon" aria-hidden="true">⚙️</span>
+                        <span class="sidebar-text">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Dashboard Content -->
+        <main id="main-content" class="dashboard-main" role="main">
+            <!-- Dashboard Header -->
+            <div class="dashboard-page-header">
+                <h1>Welcome back, Shubham!</h1>
+                <p class="dashboard-subtitle">Here's what's happening with your projects today.</p>
+            </div>
+
+            <!-- Dashboard Overview Section -->
+            <section class="dashboard-section" id="overview" aria-labelledby="overview-heading">
+                <h2 id="overview-heading">Project Overview</h2>
+                
+                <!-- Stats Cards -->
+                <div class="stats-grid">
+                    <article class="stat-card">
+                        <div class="stat-icon" aria-hidden="true">🚀</div>
+                        <div class="stat-content">
+                            <h3>Active Projects</h3>
+                            <p class="stat-number">5</p>
+                            <p class="stat-change positive">+2 this month</p>
+                        </div>
+                    </article>
+                    
+                    <article class="stat-card">
+                        <div class="stat-icon" aria-hidden="true">✅</div>
+                        <div class="stat-content">
+                            <h3>Completed Tasks</h3>
+                            <p class="stat-number">23</p>
+                            <p class="stat-change positive">+8 this week</p>
+                        </div>
+                    </article>
+                    
+                    <article class="stat-card">
+                        <div class="stat-icon" aria-hidden="true">⏰</div>
+                        <div class="stat-content">
+                            <h3>Pending Reviews</h3>
+                            <p class="stat-number">3</p>
+                            <p class="stat-change neutral">No change</p>
+                        </div>
+                    </article>
+                    
+                    <article class="stat-card">
+                        <div class="stat-icon" aria-hidden="true">📊</div>
+                        <div class="stat-content">
+                            <h3>Success Rate</h3>
+                            <p class="stat-number">98%</p>
+                            <p class="stat-change positive">+2% this month</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Active Projects Section -->
+            <section class="dashboard-section" id="projects" aria-labelledby="projects-heading">
+                <div class="section-header">
+                    <h2 id="projects-heading">Active Projects</h2>
+                    <button class="btn btn-primary btn-small">New Project</button>
+                </div>
+                
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <header class="project-header">
+                            <h3>E-commerce Redesign</h3>
+                            <div class="project-status status-in-progress">In Progress</div>
+                        </header>
+                        
+                        <div class="project-details">
+                            <p class="project-client">Client: Infosys Technologies</p>
+                            <p class="project-deadline">Due: January 15, 2025</p>
+                            
+                            <div class="project-progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Project progress: 75%">
+                                    <div class="progress-fill progress-75"></div>
+                                </div>
+                                <span class="progress-text">75% Complete</span>
+                            </div>
+                        </div>
+                        
+                        <footer class="project-actions">
+                            <a href="#" class="btn btn-secondary btn-small">View Details</a>
+                            <a href="#" class="btn btn-primary btn-small">Update Status</a>
+                        </footer>
+                    </article>
+                    
+                    <article class="project-card">
+                        <header class="project-header">
+                            <h3>Portfolio Website</h3>
+                            <div class="project-status status-review">Under Review</div>
+                        </header>
+                        
+                        <div class="project-details">
+                            <p class="project-client">Client: Kavya Reddy</p>
+                            <p class="project-deadline">Due: January 20, 2025</p>
+                            
+                            <div class="project-progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Project progress: 90%">
+                                    <div class="progress-fill progress-90"></div>
+                                </div>
+                                <span class="progress-text">90% Complete</span>
+                            </div>
+                        </div>
+                        
+                        <footer class="project-actions">
+                            <a href="#" class="btn btn-secondary btn-small">View Details</a>
+                            <a href="#" class="btn btn-primary btn-small">Update Status</a>
+                        </footer>
+                    </article>
+                    
+                    <article class="project-card">
+                        <header class="project-header">
+                            <h3>Accessibility Audit</h3>
+                            <div class="project-status status-planning">Planning</div>
+                        </header>
+                        
+                        <div class="project-details">
+                            <p class="project-client">Client: EcoTech Solutions</p>
+                            <p class="project-deadline">Due: February 1, 2025</p>
+                            
+                            <div class="project-progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" aria-label="Project progress: 25%">
+                                    <div class="progress-fill progress-25"></div>
+                                </div>
+                                <span class="progress-text">25% Complete</span>
+                            </div>
+                        </div>
+                        
+                        <footer class="project-actions">
+                            <a href="#" class="btn btn-secondary btn-small">View Details</a>
+                            <a href="#" class="btn btn-primary btn-small">Update Status</a>
+                        </footer>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Recent Tasks Section -->
+            <section class="dashboard-section" id="tasks" aria-labelledby="tasks-heading">
+                <div class="section-header">
+                    <h2 id="tasks-heading">Recent Tasks</h2>
+                    <button class="btn btn-secondary btn-small">View All</button>
+                </div>
+                
+                <div class="tasks-table-container">
+                    <table class="tasks-table" role="table">
+                        <caption class="visually-hidden">Recent tasks and their completion status</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Task</th>
+                                <th scope="col">Project</th>
+                                <th scope="col">Priority</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Due Date</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="task-info">
+                                        <h4>Update homepage design</h4>
+                                        <p class="task-description">Implement new hero section layout</p>
+                                    </div>
+                                </td>
+                                <td>E-commerce Redesign</td>
+                                <td><span class="priority-badge priority-high">High</span></td>
+                                <td><span class="status-badge status-completed">Completed</span></td>
+                                <td>Jan 8, 2025</td>
+                                <td>
+                                    <button class="btn btn-small btn-secondary" aria-label="View task details">View</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="task-info">
+                                        <h4>Accessibility testing</h4>
+                                        <p class="task-description">Run WCAG 2.1 compliance check</p>
+                                    </div>
+                                </td>
+                                <td>Portfolio Website</td>
+                                <td><span class="priority-badge priority-medium">Medium</span></td>
+                                <td><span class="status-badge status-in-progress">In Progress</span></td>
+                                <td>Jan 10, 2025</td>
+                                <td>
+                                    <button class="btn btn-small btn-secondary" aria-label="View task details">View</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="task-info">
+                                        <h4>SEO optimization</h4>
+                                        <p class="task-description">Optimize meta tags and structured data</p>
+                                    </div>
+                                </td>
+                                <td>Portfolio Website</td>
+                                <td><span class="priority-badge priority-low">Low</span></td>
+                                <td><span class="status-badge status-pending">Pending</span></td>
+                                <td>Jan 12, 2025</td>
+                                <td>
+                                    <button class="btn btn-small btn-secondary" aria-label="View task details">View</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Analytics Section -->
+            <section class="dashboard-section" id="analytics" aria-labelledby="analytics-heading">
+                <h2 id="analytics-heading">Performance Analytics</h2>
+                
+                <div class="analytics-grid">
+                    <div class="analytics-card">
+                        <h3>Project Timeline</h3>
+                        <div class="chart-placeholder" role="img" aria-label="Bar chart showing project completion timeline over the last 6 months">
+                            <div class="chart-bar chart-bar-60"></div>
+                            <div class="chart-bar chart-bar-80"></div>
+                            <div class="chart-bar chart-bar-45"></div>
+                            <div class="chart-bar chart-bar-90"></div>
+                            <div class="chart-bar chart-bar-75"></div>
+                            <div class="chart-bar chart-bar-95"></div>
+                        </div>
+                        <p class="chart-description">Projects completed on time: 85%</p>
+                    </div>
+                    
+                    <div class="analytics-card">
+                        <h3>Client Satisfaction</h3>
+                        <div class="metric-display">
+                            <span class="metric-value">4.8</span>
+                            <span class="metric-unit">/5.0</span>
+                        </div>
+                        <p class="metric-description">Average rating from client feedback</p>
+                    </div>
+                    
+                    <div class="analytics-card">
+                        <h3>Monthly Revenue</h3>
+                        <div class="metric-display">
+                            <span class="metric-value">₹18,50,000</span>
+                        </div>
+                        <p class="metric-description">+15% compared to last month</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Actions -->
+            <section class="dashboard-section" id="resources" aria-labelledby="resources-heading">
+                <h2 id="resources-heading">Quick Actions & Resources</h2>
+                
+                <div class="quick-actions-grid">
+                    <div class="action-card">
+                        <div class="action-icon" aria-hidden="true">📝</div>
+                        <h3>Create New Project</h3>
+                        <p>Start a new client project with our project template</p>
+                        <button class="btn btn-primary">Get Started</button>
+                    </div>
+                    
+                    <div class="action-card">
+                        <div class="action-icon" aria-hidden="true">📊</div>
+                        <h3>Generate Report</h3>
+                        <p>Create detailed project reports for client presentations</p>
+                        <button class="btn btn-secondary">Create Report</button>
+                    </div>
+                    
+                    <div class="action-card">
+                        <div class="action-icon" aria-hidden="true">🎯</div>
+                        <h3>Accessibility Check</h3>
+                        <p>Run automated accessibility tests on your projects</p>
+                        <button class="btn btn-secondary">Run Test</button>
+                    </div>
+                    
+                    <div class="action-card">
+                        <div class="action-icon" aria-hidden="true">📚</div>
+                        <h3>Documentation</h3>
+                        <p>Access guides, tutorials, and best practices</p>
+                        <button class="btn btn-secondary">Browse Docs</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="dashboard-footer" role="contentinfo">
+        <div class="footer-content">
+            <p>&copy; 2025 TechVision. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="contact.html">Support</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
