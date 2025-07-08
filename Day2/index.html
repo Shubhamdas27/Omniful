@@ -1,0 +1,228 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Master Class - Modern Layout Techniques</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/animations.css">
+</head>
+<body>
+    <div class="page-container">
+        <header class="main-header">
+            <div class="header-content">
+                <h1>CSS3 Learning Hub</h1>
+                <nav class="main-nav">
+                    <button class="nav-toggle" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-list">
+                        <li><a href="#fundamentals">Fundamentals</a></li>
+                        <li><a href="#flexbox">Flexbox</a></li>
+                        <li><a href="#grid">Grid</a></li>
+                        <li><a href="#responsive">Responsive</a></li>
+                        <li><a href="#animations">Animations</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="main-layout">
+            <aside class="sidebar">
+                <div class="sidebar-content">
+                    <h3>Learning Modules</h3>
+                    <ul class="module-list">
+                        <li><a href="#box-model">Box Model</a></li>
+                        <li><a href="#positioning">Positioning</a></li>
+                        <li><a href="#flexbox-basics">Flexbox Basics</a></li>
+                        <li><a href="#grid-fundamentals">Grid Fundamentals</a></li>
+                        <li><a href="#responsive-patterns">Responsive Patterns</a></li>
+                        <li><a href="#animation-basics">Animation Basics</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <main class="main-content">
+                <section id="fundamentals" class="content-section">
+                    <h2>CSS Fundamentals</h2>
+                    
+                    <div class="demo-container">
+                        <h3>Box Model Demo</h3>
+                        <div class="box-model-demo">
+                            <div class="box-example">
+                                <div class="content">Content</div>
+                            </div>
+                            <p>This box demonstrates padding, border, and margin</p>
+                        </div>
+                    </div>
+
+                    <div class="demo-container">
+                        <h3>CSS Custom Properties</h3>
+                        <div class="variable-demo">
+                            <div class="theme-card theme-blue">Blue Theme</div>
+                            <div class="theme-card theme-green">Green Theme</div>
+                            <div class="theme-card theme-purple">Purple Theme</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="flexbox" class="content-section">
+                    <h2>Flexbox Mastery</h2>
+                    
+                    <div class="demo-container">
+                        <h3>Flex Alignment Patterns</h3>
+                        <div class="flex-demo-grid">
+                            <div class="flex-example justify-start">
+                                <div class="flex-item">1</div>
+                                <div class="flex-item">2</div>
+                                <div class="flex-item">3</div>
+                            </div>
+                            <div class="flex-example justify-center">
+                                <div class="flex-item">1</div>
+                                <div class="flex-item">2</div>
+                                <div class="flex-item">3</div>
+                            </div>
+                            <div class="flex-example justify-between">
+                                <div class="flex-item">1</div>
+                                <div class="flex-item">2</div>
+                                <div class="flex-item">3</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="demo-container">
+                        <h3>Holy Grail Layout (Flexbox)</h3>
+                        <div class="holy-grail-flex">
+                            <header class="hg-header">Header</header>
+                            <div class="hg-middle">
+                                <nav class="hg-nav">Nav</nav>
+                                <main class="hg-main">Main Content</main>
+                                <aside class="hg-aside">Aside</aside>
+                            </div>
+                            <footer class="hg-footer">Footer</footer>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="grid" class="content-section">
+                    <h2>CSS Grid Advanced</h2>
+                    
+                    <div class="demo-container">
+                        <h3>Grid Template Areas</h3>
+                        <div class="grid-layout-demo">
+                            <header class="grid-header">Header</header>
+                            <nav class="grid-nav">Navigation</nav>
+                            <main class="grid-main">Main Content Area</main>
+                            <aside class="grid-sidebar">Sidebar</aside>
+                            <footer class="grid-footer">Footer</footer>
+                        </div>
+                    </div>
+
+                    <div class="demo-container">
+                        <h3>Responsive Card Grid</h3>
+                        <div class="card-grid">
+                            <div class="product-card">
+                                <div class="card-image"></div>
+                                <div class="card-content">
+                                    <h4>Wireless Headphones</h4>
+                                    <p>Premium quality wireless headphones with noise cancellation.</p>
+                                    <span class="price">₹8,299</span>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="card-image"></div>
+                                <div class="card-content">
+                                    <h4>Smart Watch</h4>
+                                    <p>Feature-rich smartwatch with health monitoring capabilities.</p>
+                                    <span class="price">₹12,499</span>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="card-image"></div>
+                                <div class="card-content">
+                                    <h4>Bluetooth Speaker</h4>
+                                    <p>Portable speaker with excellent sound quality and bass.</p>
+                                    <span class="price">₹6,699</span>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="card-image"></div>
+                                <div class="card-content">
+                                    <h4>Laptop Stand</h4>
+                                    <p>Ergonomic laptop stand for better posture and comfort.</p>
+                                    <span class="price">₹16,799</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="responsive" class="content-section">
+                    <h2>Responsive Design</h2>
+                    
+                    <div class="demo-container">
+                        <h3>Fluid Typography</h3>
+                        <div class="typography-demo">
+                            <h1 class="fluid-heading">Responsive Heading</h1>
+                            <p class="fluid-text">This text scales smoothly between different screen sizes using clamp() function for optimal readability across all devices.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="animations" class="content-section">
+                    <h2>CSS Animations & Transitions</h2>
+                    
+                    <div class="demo-container">
+                        <h3>Loading Spinners</h3>
+                        <div class="spinner-collection">
+                            <div class="spinner spinner-dots">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="spinner spinner-ring"></div>
+                            <div class="spinner spinner-pulse"></div>
+                        </div>
+                    </div>
+
+                    <div class="demo-container">
+                        <h3>Interactive Elements</h3>
+                        <div class="interaction-demo">
+                            <button class="fancy-button">Hover Me</button>
+                            <div class="animated-card">
+                                <h4>Animated Card</h4>
+                                <p>Hover to see the effect</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <!-- CSS-Only Modal -->
+        <input type="checkbox" id="modal-toggle" class="modal-toggle">
+        <div class="modal-overlay">
+            <div class="modal-container">
+                <label for="modal-toggle" class="modal-close">&times;</label>
+                <div class="modal-content">
+                    <h3>CSS-Only Modal</h3>
+                    <p>This modal is created using only CSS with the checkbox hack technique.</p>
+                    <p>No JavaScript required!</p>
+                </div>
+            </div>
+        </div>
+
+        <label for="modal-toggle" class="open-modal-btn">Open Modal</label>
+    </div>
+
+    <script>
+        // Minimal JavaScript for navigation toggle
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('.main-nav').classList.toggle('nav-open');
+        });
+    </script>
+</body>
+</html>
