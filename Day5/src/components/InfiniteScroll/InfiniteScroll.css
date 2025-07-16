@@ -1,0 +1,52 @@
+.infinite-scroll {
+  height: 100%;
+  overflow-y: auto;
+  background: white;
+}
+
+.infinite-scroll-content {
+  padding: 0;
+  background: white;
+}
+
+/* Items are styled by the parent component */
+
+.infinite-scroll-sentinel {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background: white;
+}
+
+.infinite-scroll-loading {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #666;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #646cff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.infinite-scroll-end {
+  text-align: center;
+  padding: 1rem;
+  color: #999;
+  border-top: 1px solid #eee;
+  background: white;
+}
+
+.infinite-scroll-end p {
+  margin: 0;
+}

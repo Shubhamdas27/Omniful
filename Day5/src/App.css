@@ -1,0 +1,147 @@
+.app {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.app-header h1 {
+  color: #213547;
+  margin-bottom: 0.5rem;
+}
+
+.app-header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.app-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.component-section {
+  width: 100%;
+  max-width: 800px;
+  padding: 2rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.component-section h2 {
+  margin-bottom: 1.5rem;
+  color: #213547;
+  text-align: center;
+  width: 100%;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: #646cff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #535bf2;
+}
+
+.btn-secondary {
+  background: #f1f1f1;
+  color: #333;
+  margin-right: 0.5rem;
+}
+
+.btn-secondary:hover {
+  background: #e0e0e0;
+}
+
+.modal-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.infinite-scroll-container {
+  width: 100%;
+  max-width: 600px;
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: white;
+  margin: 0 auto;
+}
+
+.scroll-item {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  background: white;
+}
+
+.scroll-item:last-child {
+  border-bottom: none;
+}
+
+.scroll-item h4 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.scroll-item p {
+  margin: 0;
+  color: #666;
+}
+
+/* Center all text and lists */
+ul, ol {
+  text-align: left;
+  max-width: 300px;
+  margin: 1rem auto;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+p {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 1rem auto;
+  line-height: 1.6;
+}
