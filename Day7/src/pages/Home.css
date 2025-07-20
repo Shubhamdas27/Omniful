@@ -1,0 +1,134 @@
+.home {
+  min-height: calc(100vh - 140px);
+  background: transparent;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.page-title {
+  text-align: center;
+  color: #343a40;
+  margin-bottom: 0.6rem;
+  font-size: 2.2rem;
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -1px;
+}
+
+.page-subtitle {
+  text-align: center;
+  color: #6c757d;
+  margin-bottom: 2.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -0.3px;
+}
+
+.products-section {
+  background: rgba(255, 255, 255, 0.95);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 2rem;
+  margin-top: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.products-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.products-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #343a40;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -0.6px;
+}
+
+.products-count {
+  background: rgba(0, 123, 255, 0.1);
+  color: #007bff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 123, 255, 0.2);
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -0.2px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+@media (max-width: 1400px) {
+  .products-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .products-section {
+    padding: 1rem;
+  }
+  
+  .products-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .products-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .products-title {
+    font-size: 1.5rem;
+  }
+  
+  .page-title {
+    font-size: 2.5rem;
+  }
+  
+  .page-subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .page-title {
+    font-size: 2rem;
+  }
+}
