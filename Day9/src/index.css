@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Minimal Color Palette */
+  --bright-blue: #51e2f5;
+  --blue-green: #9df9ef;
+  --dusty-white: #edf756;
+  --pink-sand: #ffa8b6;
+  --warm-orange: #f43a09;
+}
+
+@layer base {
+  * {
+    border-color: theme('colors.gray.200');
+  }
+  
+  .dark * {
+    border-color: theme('colors.gray.700');
+  }
+  
+  body {
+    background-color: theme('colors.white');
+    color: theme('colors.gray.900');
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  .dark body {
+    background-color: theme('colors.gray.900');
+    color: theme('colors.gray.100');
+  }
+  
+  /* Better scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: theme('colors.gray.100');
+    border-radius: 9999px;
+  }
+  
+  .dark ::-webkit-scrollbar-track {
+    background-color: theme('colors.gray.800');
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top, theme('colors.purple.400'), theme('colors.pink.400'));
+    border-radius: 9999px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to top, theme('colors.purple.500'), theme('colors.pink.500'));
+  }
+}
+
+@layer components {
+  /* Glass morphism effects */
+  .glass {
+    -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(24px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .dark .glass {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .glass-card {
+    -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(24px);
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+  
+  .dark .glass-card {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(107, 114, 128, 0.3);
+  }
+  
+  /* Chart container with backdrop filter */
+  .chart-container {
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+  }
+  
+  /* Professional Dashboard Background */
+  .professional-grid {
+    background-image: 
+      linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+  
+  .dark .professional-grid {
+    background-image: 
+      linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+  
+  /* Executive Glass Effect */
+  .executive-glass {
+    -webkit-backdrop-filter: blur(32px);
+    backdrop-filter: blur(32px);
+    background: linear-gradient(135deg, 
+      rgba(255, 255, 255, 0.25) 0%, 
+      rgba(255, 255, 255, 0.1) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 
+      0 20px 40px -12px rgba(0, 0, 0, 0.15),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+  
+  .dark .executive-glass {
+    background: linear-gradient(135deg, 
+      rgba(255, 255, 255, 0.1) 0%, 
+      rgba(255, 255, 255, 0.05) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 
+      0 20px 40px -12px rgba(0, 0, 0, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Premium Corporate Texture */
+  .corporate-texture {
+    position: relative;
+  }
+  
+  .corporate-texture::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(45deg, 
+      transparent 25%, 
+      rgba(59, 130, 246, 0.02) 25%,
+      rgba(59, 130, 246, 0.02) 50%,
+      transparent 50%,
+      transparent 75%,
+      rgba(59, 130, 246, 0.02) 75%);
+    background-size: 30px 30px;
+    pointer-events: none;
+  }
+  
+  /* Enhanced text shadows for better readability */
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .text-shadow-light {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(139, 92, 246, 0.6);
+  }
+}
+
+/* New Background Animations */
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes reverse-spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes grid-move {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(50px, 50px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+.animate-reverse-spin {
+  animation: reverse-spin 15s linear infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s ease-in-out infinite;
+}
+
+.animate-grid-move {
+  animation: grid-move 20s linear infinite;
+}
+
+/* Custom Duration Animations */
+.animate-bounce-3s {
+  animation: bounce 3s infinite;
+}
+
+.animate-bounce-4s {
+  animation: bounce 4s infinite;
+}
+
+.animate-ping-4s {
+  animation: ping 4s infinite;
+}
+
+.animate-ping-5s {
+  animation: ping 5s infinite;
+}
+
+.animate-ping-6s {
+  animation: ping 6s infinite;
+}
+
+.animate-reverse-spin-25s {
+  animation: reverse-spin 25s linear infinite;
+}
+
+/* Progress Bar Styles */
+[data-width] {
+  width: calc(var(--width) * 1%);
+  transition: width 0.3s ease;
+}
+
+/* Animation Delays */
+.animation-delay-1000 {
+  animation-delay: 1s;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-3000 {
+  animation-delay: 3s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
